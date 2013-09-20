@@ -3,9 +3,9 @@ MAIN = main
 
 main: $(MAIN).tex
 	$(LATEX) $(MAIN).tex
-#	bibtex $(MAIN)
-#	$(LATEX) $(MAIN).tex
-#	$(LATEX) $(MAIN).tex
+	bibtex $(MAIN)
+	$(LATEX) $(MAIN).tex
+	$(LATEX) $(MAIN).tex
 
 clean:
 	rm -f $(MAIN).aux
