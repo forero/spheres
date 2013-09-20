@@ -1,18 +1,27 @@
 LATEX = pdflatex
-MAIN = main
+BIBTEX = bibtex
+BASH = bash -c
+ECHO = echo
+RM = rm -rf
+TMP_SUFFS = pdf aux bbl blg log dvi ps eps out
+SUFF = pdf
 
-main: $(MAIN).tex
-	$(LATEX) $(MAIN).tex
-	bibtex $(MAIN)
-	$(LATEX) $(MAIN).tex
-	$(LATEX) $(MAIN).tex
+NAME = main
+
+RM_TMP = ${RM} $(foreach suff, ${TMP_SUFFS}, ${NAME}.${suff})
+
+CHECK_RERUN = grep Rerun $*.log
+
+all: ${NAME}.${SUFF}
+
+%.pdf: %.tex
+	${LATEX} $<
+	${BIBTEX} ${NAME}
+	${LATEX} $<
+	${LATEX} $<
 
 clean:
-	rm -f $(MAIN).aux
-	rm -f $(MAIN).log
-	rm -f $(MAIN).blg
-	rm -f $(MAIN).bbl
-	rm -f *~
+	${RM_TMP}
 
 view:
-	open $(MAIN).pdf &
+	open $(NAME).pdf &
