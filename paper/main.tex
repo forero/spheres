@@ -16,7 +16,7 @@
 \newcommand{\pasp}{PASP}
 \newcommand{\pasj}{PASJ}
 \newcommand{\hMpc}{{\ifmmode{h^{-1}{\rm Mpc}}\else{$h^{-1}$Mpc }\fi}} 
-\title{The effect of discreteness and inhomogeneity on cosmic flows} 
+\title{The influence of discreteness and inhomogeneity on cosmic flows} 
 \author{Jaime E. Forero-Romero}
 \begin{document}
 \maketitle
@@ -66,7 +66,7 @@ densities of matter. Therefore, ine commonon way to estimate this
 scale is based on counting the number of massive galaxies inside a
 sphere of radius $R$. Also the variations of number density for
 different values of the radius $R$ is used as a quantitative test to
-measure homogeneity\cite{2005ApJ...624...54H}. 
+measure homogeneity \cite{Hogg2005}. 
 Similar comoslogical tests aim at using measurements of large scale
 structure to estimate the peculiar acceleration of the local group
 that is induced by the surrounding matter
@@ -113,7 +113,7 @@ MonteCarlo simulations.
 
 
 
-We can now extend this result for an statistically homogeneous distribution
+4. We can now extend this result for an statistically homogeneous distribution
 of points. We run again a simple Monte Carlo simulation to find that the total force per unit mass produced by the particle distribution is twice as
 the of a single mass $m$ located at a distance $R_{\rm s}$ equal to
 the average interparticle separation, independent of the total number of
@@ -142,23 +142,42 @@ simulations that allows us to build spheres of $500$\hMpc in radius
 and include halos with masses spanning a range from Milky Way to
 galaxy clusters.
 
-6. We defined a fiducial scale of homogeneity of $R_{\rm in }=50$\hMpc to
-measure the fluctuation of forces due to matter in a sphere below that
-scale and the outer matter distribution with halos located up to an
-outer radius of $R_{\rm out}=500$\hMpc. 
+6. We define a fiducial scale of homogeneity of $R_{\rm in }=50$\hMpc to
+measure the fluctuation of the force due to matter in a sphere below that
+scale ($F_{\rm in}$) and the force of the matter distribution outside
+that region ($F_{\rm out}$)  in a spherical region up to $R_{\rm
+  out}=500$\hMpc. Figure \ref{fig:trace_nbody} shows the ratio 
+$F_{\rm out}/F_{\rm in}$ as we travel in a straight line along trhough
+the cosmological simulation on steps of $1$\hMpc. This figure shows
+that order of magnitude fluctuations are possible on scales of $\sim
+10$\hMpc. It also makes clear that the force produced from matter on
+scales $500$\hMpc is usually ten times the force produced by the
+matter on scales below $50$\hMpc.
+
+7. These different values for the force ration also hints towards
+different peculiar acceleration growth histories as matter is
+integrated into spheres of growing radii. For instance for low values
+of $F_{\rm out}/F_{\rm in}\sim 1.0$ the peculiar acceleration induced
+by matter inside a sphere of fixed radis $R$ barely changes as this
+sphere grows from from $R=50$\hMpc to $R=500$\hMpc. However the most
+common case seems to be  $F_{\rm out}/F_{\rm in}\sim 10.0$. Figure
+\ref{fig:spheres_radius} shows the growth of the force reation as the
+external radius increases, this result is measured for a random halo
+in the simulation with a typical value for $F_{\rm out}/F_{\rm in}$.
 
 
-7. We also consider the variation in the direction of the net force
-when the positions of the halos are perturbed within 1 $h^{-1}$ which
-is the typical lnghtscale that these objects are expected to travel in
-the age of the Universe.
+8. However until now we have focused on statistics derived over the
+simulation volume, but not on the halos from the simulation. Figure
+\ref{fig:spheres_nbody} showd the distribution of $F_{\rm out}/F_{rm
+  in}$ for spheres centered on 1000 random halos in the
+simulation. Due to the mass distribution in cosmological volumes most
+of them should correspond to halos with masses in the Milky Way mass
+range. This shows that the most common expectation in the LCDM
+cosmological model is that the force produced by the halo mass
+distribution out to scales of $500$\hMpc is $\sim 5$ times that of the
+matter distribution inside a scale of $50$\hMpc. 
 
 
-
-
-8. The fact that our simple analytical model describes the result
-obtained by simulations strenghtens our interpretation on the basis of
-fundamental point processes. [...]
 
 9. The velocity of our galaxy in the rest-frame of the cosmic
 micriwave background is 627 km
@@ -170,7 +189,15 @@ distribution from matter with positions beyond $R$, this is referred
 as the tidal component.  Both components, local and tidal, are
 pointing in the same direction (??? SURE ??).[...]
 
-10. The effects of the net force imposed by the matter distribution
+11. Possible effects on detailed methods that seek to infer local
+density distributions from peculiar velocity measurements [like Cosmic
+  Flows (Trade Mark)].
+
+12. Possible effects on large scale structure measurements that want
+to sued redshift distortions to deduce the statistics of the
+underlying matter distribution. 
+
+13. The effects of the net force imposed by the matter distribution
 in the Universe is also in principle detectable in systems isolated 
 from massive structures. The most interesting case would be the
 kinematic evolution of galaxies located in large scale voids. In these
@@ -180,10 +207,9 @@ structures. [http://adsabs.harvard.edu/abs/2011IJMPS...1...41V]
 
 
 
-11. Possible effects on detailed methods that seek to infer local
-density distributions from peculiar velocity measurements. 
 
-12. The physics of this effect are very simple to interpret.
+
+
 
 
 
@@ -250,7 +276,7 @@ line randomly traced in the cosmological box.}
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.8\linewidth,angle=0]{spheres_nbody_200_1000.pdf}
-\caption{\label{fig:sphere_nbody} Frequency of the force ratio between
+\caption{\label{fig:spheres_nbody} Frequency of the force ratio between
   the halos inside a spherical shell with radial distances $50\hMpc <
   R < 500\hMpc$ and halos within a sphere of $R<50\hMpc$. The forces
   are measured at the positions of $1000$ dark matter halos randomly
