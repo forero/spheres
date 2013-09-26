@@ -15,7 +15,8 @@
 \newcommand{\physrep}{PhR}
 \newcommand{\pasp}{PASP}
 \newcommand{\pasj}{PASJ}
-\title{Spheres}
+\newcommand{\hMpc}{{\ifmmode{h^{-1}{\rm Mpc}}\else{$h^{-1}$Mpc }\fi}} 
+\title{The effect of discreteness and inhomogeneity on cosmic flows} 
 \author{Jaime E. Forero-Romero}
 \begin{document}
 \maketitle
@@ -45,12 +46,47 @@ homogeneous conditions gravitational instability drives the emergence
 of a web-like pattern. The influence of
 matter beyond that scale can be discarded on the grounds that
 the net gravitational force inside an homogeneous spherical
-shell is zero. [Inhomogeneity, Kirchoff's theorem] [...]
+shell is zero. In classical newtonian mechanics it is possible to show
+that the net force inside an homogeneous and continus shell of matter
+is exactly zero. The same is valid in general relativity. That result
+receives the name of the Birkhoff's theorem. 
+
+2a. The observational advances in the last two decades have allowed us
+to measure the distribution of galaxies on very large scales. The
+spatial pattern they follow is highly structured. It resembles a
+large network of interconnected filaments and sheets crossing large
+underdense regions.  This is why the community referes to this
+structure as the cosmic web. At the same time the concept of
+statistical homogeneity is a fundamental assumption to various
+theoretical aspects in cosmology. 
+
+2b. Quantitative tests of homogeneity seek to measure the indipendent
+volumes of the Universe and test whether they have similar mean
+densities of matter. Therefore, ine commonon way to estimate this
+scale is based on counting the number of massive galaxies inside a
+sphere of radius $R$. Also the variations of number density for
+different values of the radius $R$ is used as a quantitative test to
+measure homogeneity\cite{2005ApJ...624...54H}. 
+Similar comoslogical tests aim at using measurements of large scale
+structure to estimate the peculiar acceleration of the local group
+that is induced by the surrounding matter
+\cite{Gibelyou2012,Bilicki2012}. These two measurements can be then
+compared against the predictions of theories of large scale structure
+evolution and serve as a cosmological probe. 
 
 
-
-2. Large galaxy surveys help us to define different physical scales for
-homogeneity [...]
+Once the scale of statistical homogeneinity is well determined one
+might be tempted to make the approximation that,
+due to Birkhoff's theorem, it becomes, a good approximation to neglect
+the influcene of matter beyond that scale on the dynamical influence
+of matter located in a sphere centerd in a sphere of radius equal to
+the homogeneity scale.  In this letter we show how the effects of
+discretenes on a statistically homogeneous matter distribution can
+have a dynamical effect. We extend these results to the case of the
+large scale strucure of the universe by means of N-body simulations
+that presenting the effect of matter distributions beyond the assumed
+homogeneity scale of $70-200$\hMpc.
+ 
 
 
 3. We consider first a simple phenomenological model where matter is
@@ -65,7 +101,7 @@ position  $R$ as follows:
 F_{\rm T } = N_p^{1/2} F_{\rm m} (R),
 \end{equation}
 %
-a results that can be explained analytically
+a result that can be explained analytically
 \cite{Chandra43,Carati2008}. In Figure \ref{fig:sphere_surface} we
 show the results of a simple Monte Carlo simulation where $N_p$
 particles are located over the surface sphere of radius $R$, the total force per
@@ -77,27 +113,8 @@ MonteCarlo simulations.
 
 
 
-\begin{figure}
-\begin{center}
-\includegraphics[width=0.8\linewidth,angle=0]{spheres_surface.pdf}
-\caption{Norm of the total force per unit mass, $F_{T}$, produced by a distribution of
-  $N_p$ point masses randomly distributed over the surface of a sphere
-  of radius $R$ as a function of the number of point masses. The value
-  of $F_T$ is  computed at the center of the sphere and is  expressed
-  as a multiple  of the force per unit mass produced by a  single
-  point mass located  at a distance $R$ from the
-  center. \label{fig:sphere_surface}}. 
-\end{center}
-\end{figure}
-
-
-4. Conventional approximations consider that the net gravitational force
-inside an statistically homogeneous shell matter distribution is
-zero. However, by extending the result we have just derived, as long
-the matter distribution is discrete, this result does not hold. We can
-now extend this result for an statistically homogeneous distribution
-of points. We run again a simple Monte Carlo simulation to find
-that the total force per unit mass produced by the particle distribution is twice as
+We can now extend this result for an statistically homogeneous distribution
+of points. We run again a simple Monte Carlo simulation to find that the total force per unit mass produced by the particle distribution is twice as
 the of a single mass $m$ located at a distance $R_{\rm s}$ equal to
 the average interparticle separation, independent of the total number of
 particles. 
@@ -108,22 +125,10 @@ F_{\rm T} = 2 F_{\rm m}(R_{\rm s}).
 
 Figure \ref{fig:sphere_bulk} presents the results of a MonteCarlo
 realization of this experiment. It shows that the peak of the
-distribution of values for $F_{\rm m}/F_{\rm m}(R_{\rm s})$ is
-located at values of $\sim 2$. Values two order of magnitude higher
-are possible due to a 
+distribution of values for $F_{\rm T}/F_{\rm m}(R_{\rm s})$ is
+located at values of $\sim 2$. The distribution is broad and allows
+values one order of magnitude above/below the maximum. 
 
-\begin{figure}
-\begin{center}
-\includegraphics[width=0.8\linewidth,angle=0]{spheres_bulk.pdf}
-\caption{\label{fig:sphere_bulk} Frequency of the norm of the total
-  force per unit mass produced by a set of identical $N_p$ particles
-  homogeneously distributed inside a sphere of radius $R$. This
-  corresponds to $10^4$ different realizations of $N_p=10^4$ particles
- each. The values of $F_T$ is normalized to the force per unit mass
- produced by a single particle located at a distance $R_s$ equal to
- the average interparticle separation from the center. \label{fig:sphere_surface}.} 
-\end{center}
-\end{figure}
 
 
 5. In the case of the actual large scale matter distribution in the
@@ -132,31 +137,23 @@ respect our toy model. First, the galaxies are not randomly
 distributed, but clustered. Second, the galaxies span a wide range of
 masses, with less massive galaxies being more common than massive
 galaxies. In order to test the influence of these two carachteristics
-we use a large comological N-body simulation.[...]
+we use a large comological N-body simulation. We have used a
+simulations that allows us to build spheres of $500$\hMpc in radius
+and include halos with masses spanning a range from Milky Way to
+galaxy clusters.
 
-6. The results of the simulation [...] 
-
-\begin{figure}
-\begin{center}
-\includegraphics[width=0.8\linewidth,angle=0]{spheres_nbody.pdf}
-\caption{\label{fig:sphere_nbody} Frequency of the norm of the total
-  force per unit mass produced by a halos inside a spherical volume
-  from a cosmological N-body simulation. The radius of the spherical
-  region is $300$ $h^{-1}$ Mpc. This corresponds to $10^4$ different volumes 
- The values of $F_T$ are normalized to the force per unit mass
- produced by a single particle located at a distance $R_s$ equal to
- the average interparticle separation from the center and a mass equal
- to the average mass of all halos in the spherical volumne. 
-\label{fig:sphere_nbody}.} 
-\end{center}
-\end{figure}
-
+6. We defined a fiducial scale of homogeneity of $R_{\rm in }=50$\hMpc to
+measure the fluctuation of forces due to matter in a sphere below that
+scale and the outer matter distribution with halos located up to an
+outer radius of $R_{\rm out}=500$\hMpc. 
 
 
 7. We also consider the variation in the direction of the net force
 when the positions of the halos are perturbed within 1 $h^{-1}$ which
 is the typical lnghtscale that these objects are expected to travel in
 the age of the Universe.
+
+
 
 
 8. The fact that our simple analytical model describes the result
@@ -188,6 +185,78 @@ density distributions from peculiar velocity measurements.
 
 12. The physics of this effect are very simple to interpret.
 
+
+
+
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.8\linewidth,angle=0]{spheres_surface.pdf}
+\caption{Norm of the total force per unit mass, $F_{T}$, produced by a
+  distribution of $N_p$ point masses randomly distributed over the
+  surface of a sphere of radius $R$. The value
+  of $F_T$ is  computed at the center of the sphere and is  expressed
+  as a multiple  of the force per unit mass produced by a  single
+  point mass located  at a distance $R$ from the
+  center. \label{fig:sphere_surface}}. 
+\end{center}
+\end{figure}
+
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.8\linewidth,angle=0]{spheres_bulk.pdf}
+\caption{\label{fig:sphere_bulk} Frequency of the norm of the total
+  force per unit mass produced by a set of identical $N_p$ particles
+  homogeneously distributed inside a sphere of radius $R$. This
+  corresponds to $10^4$ different realizations of $N_p=10^4$
+  particles. The values of $F_T$ is normalized to the force per unit
+  mass produced by a single particle located at a distance $R_s$ from
+  the center equal to the average interparticle
+  separation. \label{fig:sphere_surface}.}  
+\end{center}
+\end{figure}
+
+
+
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.8\linewidth,angle=0]{trace_nbody_200_1000.pdf}
+\caption{\label{fig:trace_nbody}. Forces produced by dark matter halos in a
+cosmological simulation. The figure shows the ratio between the force
+produced by all halos within a spherical shell of halos with radial
+distances $50\hMpc <R<500\hMpc$ and the halos in the inner core with
+$R<50\hMpc$. This is presented as a function of the distance along a
+line randomly traced in the cosmological box.}
+\end{center}
+\end{figure}
+
+
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.8\linewidth,angle=0]{spheres_nbody_radius_200_1000.pdf}
+\caption{\label{fig:spheres_radius}. Forces produced by dark matter
+  halos over a random dark matter halo in a simulation. This figures
+  presents the ration between the forces by all halos within a
+  spherical shell with radial distances $50\hMpc < R < R_{\rm out}$
+  and he halos within a spherical shell with $R<50\hMpc$. } 
+\end{center}
+\end{figure}
+
+
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.8\linewidth,angle=0]{spheres_nbody_200_1000.pdf}
+\caption{\label{fig:sphere_nbody} Frequency of the force ratio between
+  the halos inside a spherical shell with radial distances $50\hMpc <
+  R < 500\hMpc$ and halos within a sphere of $R<50\hMpc$. The forces
+  are measured at the positions of $1000$ dark matter halos randomly
+  selected in the simulated volume.}
+\end{center}
+\end{figure}
 
 
 
