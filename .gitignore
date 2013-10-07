@@ -1,0 +1,7 @@
+code/*.png
+code/*.pdf
+code/*.eps
+*~
+*.ipynb_checkpoints*
+*.aux
+*.log
