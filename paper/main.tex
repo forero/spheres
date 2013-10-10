@@ -16,26 +16,24 @@
 \newcommand{\pasp}{PASP}
 \newcommand{\pasj}{PASJ}
 \newcommand{\hMpc}{{\ifmmode{h^{-1}{\rm Mpc}}\else{$h^{-1}$Mpc }\fi}} 
-\title{Non-local effects of matter discreteness and inhomogeneity on
-  cosmic flows}  \author{Jaime E. Forero-Romero \& NN \& NN}
+\newcommand{\hMsun}{{\ifmmode{h^{-1}{\rm M_{\odot}}}\else{$h^{-1}$M$_{\odot}$}\fi}}
+\title{The influence of matter discreteness beyond the homogeneity
+  scale on cosmic flows}  \author{Jaime E. Forero-Romero \& NN \& NN} 
 \begin{document}
 \maketitle
 \begin{abstract}
 
-Gravity is the dominant force shaping the spatial distribution of galaxies in
-the Universe on its largest scales. Under the assumption of
+Gravity is the dominant force shaping the large scale spatial
+distribution of galaxies in the Universe. Under the assumption of
 homogeneity and isotropy one could approximate the local
 kinematic evolution by the near matter distribution below an
-homogeneity scale. In this letter we show that if the matter
-distribution is composed by a discrete set of points then, due to
-statistical fluctuations, the gravitational influence does not have a
-cut down scale. Our results are based on straightforward
-analytical considerations, monte-carlo realizations and cosmological
-N-body simulations. We discuss the implications of these results in
-the interpretation of the peculiar motion of our galaxy and bulk
-galaxy flows in the local universe. We also suggest new cosmological
-tests of these ideas. 
-
+homogeneity scale. In this letter we show that the effects of a
+discrete matter distribution are different from those infered from a
+continuous matter distribution. We compute this influence based on
+straightforward analytical considerations, monte-carlo realizations
+and cosmological N-body simulations. We discuss the implications of
+these results in the interpretation of the peculiar motion of our
+galaxy and bulk galaxy flows in the Local Universe.
 
 
 \end{abstract}
@@ -76,10 +74,8 @@ evolution and serve as a cosmological probe.
 
 
 Once the scale of statistical homogeneinity is well determined one
-might be tempted to make the approximation that,
-due to Birkhoff's theorem, it becomes, a good approximation to neglect
-the influcene of matter beyond that scale on the dynamical influence
-of matter located in a sphere centerd in a sphere of radius equal to
+might be tempted neglect, thanks to Birkhoff's theorem,
+the influcene of matter beyond a sphere of radius equal to
 the homogeneity scale.  In this letter we show how the effects of
 discretenes on a statistically homogeneous matter distribution can
 have a dynamical effect. We extend these results to the case of the
@@ -110,14 +106,10 @@ multiple of $F_{m}(R)=Gm_p/R^2$. This shows how the analytical
 expectation is a good approximation to the results obtained through
 MonteCarlo simulations. 
 
-This is a new line.
-
-
-
-
 We can now extend this result for an statistically homogeneous distribution
-of points. We run again a simple Monte Carlo simulation to find that the total force per unit mass produced by the particle distribution is twice as
-the of a single mass $m$ located at a distance $R_{\rm s}$ equal to
+of points. We run again a simple Monte Carlo simulation to find that
+the total force per unit mass produced by the particle distribution is
+twice as the of a single mass $m$ located at a distance $R_{\rm s}$ equal to
 the average interparticle separation, independent of the total number of
 particles. 
 
@@ -130,8 +122,6 @@ realization of this experiment. It shows that the peak of the
 distribution of values for $F_{\rm T}/F_{\rm m}(R_{\rm s})$ is
 located at values of $\sim 2$. The distribution is broad and allows
 values one order of magnitude above/below the maximum. 
-
-
 
 In the case of the actual large scale matter distribution in the
 Universe, galaxies are found to have two distinct characteristics with
@@ -170,18 +160,25 @@ in the simulation with a typical value for $F_{\rm out}/F_{\rm in}$.
 
 However until now we have focused on statistics derived over the
 simulation volume, but not on the halos from the simulation. Figure
-\ref{fig:spheres_nbody} showd the distribution of $F_{\rm out}/F_{rm
+\ref{fig:spheres_nbody} shows the distribution of $F_{\rm out}/F_{rm
   in}$ for spheres centered on 1000 random halos in the
 simulation. Due to the mass distribution in cosmological volumes most
-of them should correspond to halos with masses in the Milky Way mass
+of them should correspond to halos with masses a few times the Milky Way mass
 range. This shows that the most common expectation in the LCDM
-cosmological model is that the force produced by the halo mass
-distribution out to scales of $500$\hMpc is $\sim 5$ times that of the
+cosmological model is that the force produced by the massive halos
+distribution out to scales of $500$\hMpc is $\sim 10$ times that of the
 matter distribution inside a scale of $50$\hMpc. 
 
+The previous results are computed at the present cosmic epoch at a
+redshift of $z=0$. However, they remain valid when the universe
+was half its age at $z=1$, provided that volumes probed are considered
+in comoving coordinates.
 
+This results imply that, at least during the last 7 billion years of
+cosmic evolution, the gravitational force that induces the peculiar
+velocities can be generated by matter far beyond the homogeneity
+scale. 
 
-[Comments on the MW peculiar motion and the dipole]
 These results have implications on the interpretation of different
 measurements of galaxies as cosmic flow tracers. For instance, the
 velocity of our Galaxy in the rest-frame of the cosmic microwave
@@ -210,10 +207,9 @@ to used redshift distortions to deduce the statistics of the
 underlying matter distribution. ]
 
 
-The effects of the tidal force could be most clearly detectable in
-systems isolated from massive structures. For instance, the kinematics
-of galaxies located in large scale voids should provide  a dominance
-by the tidal forces. The ratio of tidal to local
+The effects of the tidal force could be detectable in systems isolated
+from massive structures. The bulk velocities of galaxies
+located in large scale voids should be dominated by the tidal forces. The ratio of tidal to local
 forces is only constant on scales smaller than $\sim 5$\hMpc (Figure
 \ref{fig:trace_nbody}), while large cosmic voids can be up to ten
 times larger. This different scales make viable the detection of tidal
@@ -225,15 +221,6 @@ from massive structures. An example is the kinematic evolution of
 galaxies located in large scale voids. In these regions the dominant
 gravitational interaction would be provided by the tidal component and
 not by nearby structures. [http://adsabs.harvard.edu/abs/2011IJMPS...1...41V] ]
-
-
-
-
-
-
-
-
-
 
 
 \begin{figure}
@@ -269,7 +256,7 @@ not by nearby structures. [http://adsabs.harvard.edu/abs/2011IJMPS...1...41V] ]
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.8\linewidth,angle=0]{trace_nbody_200_1000.pdf}
+\includegraphics[width=0.8\linewidth,angle=0]{trace_nbody_82_300_1000.pdf}
 \caption{\label{fig:trace_nbody}. Forces produced by dark matter halos in a
 simulation along a linear path through the cosmological volume. The
 curve presents the ratio between the force produced by all halos
@@ -283,7 +270,7 @@ a sphere of $R<50\hMpc$. }
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.8\linewidth,angle=0]{spheres_nbody_radius_200_1000.pdf}
+\includegraphics[width=0.8\linewidth,angle=0]{spheres_nbody_radius_82_300_1000.pdf}
 \caption{\label{fig:spheres_radius}. Growth of the total gravitational
   force over ten random dark matter halos in a simulation. Each curve
   presents the between the forces by all halos within a spherical shell with
@@ -296,7 +283,7 @@ a sphere of $R<50\hMpc$. }
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.8\linewidth,angle=0]{spheres_nbody_200_1000.pdf}
+\includegraphics[width=0.8\linewidth,angle=0]{spheres_nbody_82_300_1000.pdf}
 \caption{\label{fig:spheres_nbody} Frequency of the force ratio between
   the halos inside a spherical shell with radial distances $50\hMpc <
   R < 500\hMpc$ and halos within a sphere of radius $R<50\hMpc$. The forces
@@ -304,6 +291,21 @@ a sphere of $R<50\hMpc$. }
   selected in the simulated volume.}
 \end{center}
 \end{figure}
+
+
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.8\linewidth,angle=0]{spheres_nbody_norm_MW_82_300_1000.pdf}
+\caption{\label{fig:spheres_nbody} Force produced by 
+  halos inside a spherical shell with radial distances $50\hMpc <
+  R < 500\hMpc$ normalized to the force produced by a MW-like dark
+  matter halo of $10^{12}$\hMsun located at $1$\hMpc. The forces are
+  measured on $1000$ dark matter halos randomly selected in the
+  simulation volume.}
+\end{center}
+\end{figure}
+
 
 
 
