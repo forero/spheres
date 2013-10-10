@@ -5,3 +5,6 @@ code/*.eps
 *.ipynb_checkpoints*
 *.aux
 *.log
+*.bbl
+*.blg
+
